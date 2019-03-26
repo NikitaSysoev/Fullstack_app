@@ -1,6 +1,6 @@
 {
   "name": "fulsstack_app",
-  "version": "1.2.1",
+  "version": "1.5.0",
   "description": "In the project directory, you can run:",
   "main": "index.js",
   "scripts": {

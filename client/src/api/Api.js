@@ -1,7 +1,17 @@
 import axios from 'axios';
 export default function Api() {}
 
-Api.fetchData = async url => {
-  const res = await axios(`http://localhost:3001/api${url}`);
+Api.url = 'http://localhost:3001/api';
+
+Api.get = async url => {
+  const res = await axios(Api.url + url);
   return res.data;
 };
+
+Api.post = (url, options) => {
+  return axios.post(Api.url + url, options);
+};
+
+Api.put = url => {};
+
+Api.delete = url => {};

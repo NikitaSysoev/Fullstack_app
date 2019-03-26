@@ -1,13 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Api from './api/Api';
+import LoginForm from './components/Form/LoginForm';
+import UserList from './components/UserList/UserList';
 
 const App = () => {
-  const [data, setData] = useState('...');
-  useEffect(() => {
-    Api.fetchData('/hello').then(data => setData(data));
-  });
-  return <div className="App">getting {data}</div>;
+  return (
+    <div className="App d-flex justify-content-around">
+      <LoginForm />
+      <UserList />
+    </div>
+  );
 };
 
 export default App;
