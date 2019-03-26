@@ -1,9 +1,10 @@
 {
   "name": "fulsstack_app",
-  "version": "1.0.0",
+  "version": "1.2.1",
   "description": "In the project directory, you can run:",
   "main": "index.js",
   "scripts": {
+    "kill": "killall node",
     "start": "concurrently --kill-others-on-fail \"cd backend && npm start\" \"cd client && npm start\""
   },
   "keywords": [],

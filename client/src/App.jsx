@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+
+import Api from './api/Api';
 
 const App = () => {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState('...');
   useEffect(() => {
-    axios('http://localhost:3001/api/hello').then(res => setData(res.data));
+    Api.fetchData('/hello').then(data => setData(data));
   });
-  return <div className="App">getting {data ? data : '...'}</div>;
+  return <div className="App">getting {data}</div>;
 };
 
 export default App;
