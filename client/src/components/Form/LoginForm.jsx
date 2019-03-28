@@ -15,7 +15,8 @@ const LoginForm = () => {
 
   const register = e => {
     e.preventDefault();
-    Api.post('/register', { login, password });
+    const _id = Api.getIntRandom(1, 1000);
+    Api.post('/register', { _id, login, password });
     console.log('register');
   };
 
@@ -37,8 +38,8 @@ const LoginForm = () => {
         onChange={e => setPassword(e.target.value)}
       />
       <br />
-      <input type="button" value="LOGIN" onClick={submit} />
-      <input type="button" value="REGISTER" onClick={register} />
+      <button className="btn btn-danger" type="button" onClick={submit}>LOGIN</button>
+      <button className="btn btn-danger" type="button" onClick={register}>REGISTER</button>
     </form>
   );
 };

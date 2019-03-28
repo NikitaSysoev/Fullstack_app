@@ -15,6 +15,8 @@ mongoose.set('useCreateIndex', true);
 const User = require('./model/User');
 const passport = require('./passport/passport');
 
+// User.collection.dropIndexes()
+
 // MongoDB database url
 const uri = 'mongodb+srv://admin:g4C4fPPCTFFBqic@cluster0-wyalb.mongodb.net/test?retryWrites=true';
 // подключаем наш бэкенд код с бд
@@ -53,10 +55,9 @@ router.get('/logout', (req, res) => {
 });
 
 router.post('/register', (req, res) => {
-  const { login, password } = req.body;
-  const user = new User({ login, password });
+  const user = new User(req.body);
   user.save();
-  res.send('register');
+  res.redirect('/');
 });
 
 router.get('/users', async (req, res, next) => {

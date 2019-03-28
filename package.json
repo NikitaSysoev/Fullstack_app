@@ -1,7 +1,7 @@
 {
   "name": "fulsstack_app",
-  "version": "1.5.0",
-  "description": "In the project directory, you can run:",
+  "version": "1.5.1",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "kill": "killall node",
