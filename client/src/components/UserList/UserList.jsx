@@ -1,31 +1,28 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 
-import Api from '../../api/Api';
 import { getUsers } from '../../actions/userAction';
 
 const UserList = ({ getUsers, list }) => {
-  // const [list, setList] = useState([]);
   useEffect(() => {
-    // Api.get('/users').then(data => setList(data));
     getUsers();
-  },[]);
+  }, []);
   return (
     <div className="UserList">
       <ul>
-        {list.map(item => {
-          return <li key={item._id}>{item.login}</li>;
-        })}
+        {list.map(item => (
+          <li key={item._id}>{item.login}</li>
+        ))}
       </ul>
     </div>
   );
 };
 
-function mapStateToProps(state) {
+const mapStateToProps = state => {
   return {
     list: state.users.users
   };
-}
+};
 
 const mapDispatchToProps = dispatch => {
   return {

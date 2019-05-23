@@ -6,9 +6,9 @@ const UserSchema = new mongoose.Schema(
     login: String,
     password: String
   },
-  // {
-  //   autoIndex: true
-  // },
+  {
+    autoIndex: true
+  },
   {
     versionKey: false
   }

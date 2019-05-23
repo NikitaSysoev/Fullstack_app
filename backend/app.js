@@ -109,6 +109,15 @@ router.delete('/users/:id', async (req, res, next) => {
   }
 });
 
+router.delete('/users/', async (req, res, next) => {
+  try {
+    const delUsers = await User.deleteMany({});
+    res.send(delUsers);
+  } catch (e) {
+    next(e);
+  }
+});
+
 // append /api for our http requests
 app.use('/api', router);
 
