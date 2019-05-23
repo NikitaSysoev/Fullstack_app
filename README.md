@@ -1,15 +1,16 @@
-## Available Scripts
-
-In the project directory, you can run:
-
-- npm start
-
 ## MERN application - MongoDB Express React and Node app
 
-If you want to run application as is:
+### Available scripts
+
 In the project directory, you can run:
 
+If you want to run application as is:
+
 - npm start
+
+if you need to kill all Node processes running on the machine:
+
+- npm run kill
 
 if you want to run only backend:
 
@@ -18,11 +19,6 @@ if you want to run only backend:
 if you want to run only client part:
 
 - cd client && npm start
-
-if you need to kill all Node processes running on the machine:
-In the project directory, you can run:
-
-- npm run kill
 
 ## Resources
 
