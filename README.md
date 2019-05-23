@@ -3,16 +3,32 @@
 In the project directory, you can run:
 
 - npm start
- 
-### MERN application - MongoDB Express React and Node app
+
+## MERN application - MongoDB Express React and Node app
+
+If you want to run application as is:
+In the project directory, you can run:
+
+- npm start
+
+if you want to run only backend:
 
 - cd backend && npm start
+
+if you want to run only client part:
+
 - cd client && npm start
 
-### Resources
+if you need to kill all Node processes running on the machine:
+In the project directory, you can run:
+
+- npm run kill
+
+## Resources
+
 - https://cloud.mongodb.com
 
-### Articles
+## Articles
 
 - https://medium.com/javascript-in-plain-english/full-stack-mongodb-react-node-js-express-js-in-one-simple-app-6cc8ed6de274
 - https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a
