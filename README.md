@@ -1,6 +1,8 @@
-## MERN application - MongoDB Express React and Node app
+## MERN application 
 
-### Available scripts
+MongoDB Express React and Node app
+
+## Available scripts
 
 In the project directory, you can run:
 
