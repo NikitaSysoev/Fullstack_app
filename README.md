@@ -16,11 +16,11 @@ if you need to kill all Node processes running on the machine:
 
 if you want to run only backend:
 
-- cd backend && npm start
+- npm run back
 
 if you want to run only client part:
 
-- cd client && npm start
+- npm run front
 
 ## Resources
 

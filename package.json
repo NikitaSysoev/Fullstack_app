@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "back": "cd backend && npm start",
+    "front": "cd client && npm start",
     "kill": "killall node",
     "start": "concurrently --kill-others-on-fail \"cd backend && npm start\" \"cd client && npm start\""
   },
